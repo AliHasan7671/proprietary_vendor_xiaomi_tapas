@@ -4,19 +4,25 @@
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 */
 BEGIN TRANSACTION;
-INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 20);
-INSERT INTO "qcril_emergency_source_hard_mcc_table" VALUES('510','119','','');
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','01','112',2);
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','09','110',1);
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','09','112',2);
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','09','113',4);
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','09','115',8);
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','09','118',2);
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','10','113',4);
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','28','110',1);
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','28','112',2);
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','28','113',4);
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','28','115',8);
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('510','28','118',2);
-COMMIT TRANSACTION;
 
+INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 20);
+
+DELETE FROM qcril_emergency_source_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '100';
+DELETE FROM qcril_emergency_source_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '128';
+DELETE FROM qcril_emergency_source_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '153';
+DELETE FROM qcril_emergency_source_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '180';
+DELETE FROM qcril_emergency_source_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '185';
+DELETE FROM qcril_emergency_source_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '188';
+
+INSERT INTO "qcril_emergency_source_mcc_mnc_table" VALUES('502','18','112','','');
+INSERT INTO "qcril_emergency_source_mcc_mnc_table" VALUES('502','18','911','','');
+INSERT INTO "qcril_emergency_source_mcc_mnc_table" VALUES('502','18','999','','');
+
+DELETE FROM qcril_emergency_source_voice_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '100';
+DELETE FROM qcril_emergency_source_voice_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '128';
+DELETE FROM qcril_emergency_source_voice_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '153';
+DELETE FROM qcril_emergency_source_voice_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '180';
+DELETE FROM qcril_emergency_source_voice_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '185';
+DELETE FROM qcril_emergency_source_voice_mcc_mnc_table  where MCC = '724' AND MNC = '05' AND NUMBER = '188';
+
+COMMIT TRANSACTION;
