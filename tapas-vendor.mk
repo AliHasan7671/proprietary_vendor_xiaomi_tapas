@@ -8,13 +8,11 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/tapas/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/tapas/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/xiaomi/tapas/proprietary/odm/bin/mlipayd@1.1:$(TARGET_COPY_OUT_ODM)/bin/mlipayd@1.1 \
     vendor/xiaomi/tapas/proprietary/odm/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_configuration.xml \
     vendor/xiaomi/tapas/proprietary/odm/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_default_stream_volumes.xml \
     vendor/xiaomi/tapas/proprietary/odm/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_product_strategies.xml \
     vendor/xiaomi/tapas/proprietary/odm/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_stream_volumes.xml \
     vendor/xiaomi/tapas/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
-    vendor/xiaomi/tapas/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/tapas/proprietary/odm/etc/permissions/sku_m7n/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_m7n/android.hardware.nfc.hce.xml \
     vendor/xiaomi/tapas/proprietary/odm/etc/permissions/sku_m7n/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_m7n/android.hardware.nfc.hcef.xml \
     vendor/xiaomi/tapas/proprietary/odm/etc/permissions/sku_m7n/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_m7n/android.hardware.nfc.uicc.xml \
@@ -28,12 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tapas/proprietary/vendor/firmware/goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group.bin \
     vendor/xiaomi/tapas/proprietary/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware.bin \
     vendor/xiaomi/tapas/proprietary/vendor/firmware/gtx8_limits_M395.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/gtx8_limits_M395.csv \
-    vendor/xiaomi/tapas/proprietary/odm/lib64/libmlipay.so:$(TARGET_COPY_OUT_ODM)/lib64/libmlipay.so \
-    vendor/xiaomi/tapas/proprietary/odm/lib64/libmlipay@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/libmlipay@1.1.so \
-    vendor/xiaomi/tapas/proprietary/odm/lib64/libteeclientjni.so:$(TARGET_COPY_OUT_ODM)/lib64/libteeclientjni.so \
-    vendor/xiaomi/tapas/proprietary/odm/lib64/libwvkeybox.so:$(TARGET_COPY_OUT_ODM)/lib64/libwvkeybox.so \
-    vendor/xiaomi/tapas/proprietary/odm/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.xiaomi.hardware.mlipay@1.0.so \
-    vendor/xiaomi/tapas/proprietary/odm/lib64/vendor.xiaomi.hardware.mlipay@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.xiaomi.hardware.mlipay@1.1.so \
     vendor/xiaomi/tapas/proprietary/vendor/etc/displayconfig/display_id_4630946444529356673.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946444529356673.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/displayconfig/display_id_4630946914797301377.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946914797301377.xml \
     vendor/xiaomi/tapas/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
@@ -1248,7 +1240,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tapas/proprietary/vendor/lib64/libmiphone_capture_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_capture_bokeh.so \
     vendor/xiaomi/tapas/proprietary/vendor/lib64/libmiphone_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_preview_bokeh.so \
     vendor/xiaomi/tapas/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
-    vendor/xiaomi/tapas/proprietary/vendor/lib64/libmisight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisight.so \
     vendor/xiaomi/tapas/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
     vendor/xiaomi/tapas/proprietary/vendor/lib64/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_cac3.so \
     vendor/xiaomi/tapas/proprietary/vendor/lib64/libmmcamera_lscv35.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_lscv35.so \
@@ -1737,5 +1728,4 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.qtiradioconfig \
     vendor.qti.hardware.servicetracker@1.2-service \
     vendor.qti.memory.pasrmanager@1.0-service \
-    vendor.xiaomi.hardware.micharge@1.0 \
-    manifest_vendor.xiaomi.hardware.mlipay
+    vendor.xiaomi.hardware.micharge@1.0
