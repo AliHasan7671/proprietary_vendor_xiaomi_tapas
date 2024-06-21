@@ -16,7 +16,7 @@ on property:sys.boot_completed=1
     start charge_logger
 
 #run charge_logger in off-charge mode
-on property:init.svc.vendor.charger=running
+on charger
     mkdir /data/vendor/charge_logger 0771 system system
     #chmod 0660 /sys/class/power_supply/wireless/reverse_chg_mode
     start charge_logger
