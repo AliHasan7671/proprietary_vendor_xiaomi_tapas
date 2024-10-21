@@ -68,3 +68,4 @@ setpriority: 1
 getdents64: 1
 dup: 1
 gettimeofday: 1
+gettid: 1
