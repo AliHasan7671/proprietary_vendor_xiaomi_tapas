@@ -21,3 +21,7 @@ minReprocessInputHeight=3000
 enableNativeHEIF=FALSE
 numberOfCHIThreads=7
 maxHalRequests=7
+#flush time
+nodeResponseTime=200
+sessionResponseTimePadding=300
+sessionMaxFlushWaitTime=1000
